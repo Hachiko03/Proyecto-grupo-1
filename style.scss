@@ -1,0 +1,68 @@
+// \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+// variables
+
+$color-text: rgb(72, 72, 72);
+$color-primary: rgb(172, 0, 13);
+$color-text-button: rgb(255, 255, 255);
+
+$border-radius: 0.25rem;
+
+$font-family: Monserrat, sans-serif;
+
+$spacing-xxs: 20px;
+$spacing-xs: 40px;
+$spacing-s: 48px;
+$spacing-m: 50px;
+$spacing-l: 72px;
+$spacing-xl: 80px;
+
+$font-weight-xs: 300;
+$font-weight-s: 700;
+
+$font-sixe-xs: 0.75rem;
+$font-size-s: 0.875rem;
+$font-size-m: 1rem;
+$font-size-l: 1.125rem;
+$font-size-xl: 1.3125rem;
+$font-size-xxl: 1.75rem;
+
+// \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+// Configuración Página web
+
+body {
+    margin: 0;
+    background-color: rgb(195, 222, 183);
+
+    p {
+
+        color: $color-text;
+        font-family: $font-family;
+        font-size: $font-size-m;
+
+    }
+
+    h2 {
+
+        color: $color-text;
+        font-family: $font-family;
+        font-size: $font-size-xl;
+        font-weight: $font-weight-s;
+    }
+
+    h3 {
+        color: $color-text;
+        font-family: $font-family;
+        font-size: $font-size-m ;
+        font-weight: $font-weight-xs;
+    }
+
+    button {
+
+        background-color: $color-primary;
+        border-radius: $border-radius;
+        color: $color-text-button;
+
+    }
+
+}

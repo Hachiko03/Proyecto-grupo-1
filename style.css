@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  background-color: rgb(195, 222, 183);
+}
+body p {
+  color: rgb(72, 72, 72);
+  font-family: Monserrat, sans-serif;
+  font-size: 1rem;
+}
+body h2 {
+  color: rgb(72, 72, 72);
+  font-family: Monserrat, sans-serif;
+  font-size: 1.3125rem;
+  font-weight: 700;
+}
+body h3 {
+  color: rgb(72, 72, 72);
+  font-family: Monserrat, sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+}
+body button {
+  background-color: rgb(172, 0, 13);
+  border-radius: 0.25rem;
+  color: rgb(255, 255, 255);
+}/*# sourceMappingURL=style.css.map */
