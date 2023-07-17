@@ -1,17 +1,21 @@
 * {
-  box-sizing: border-box;
   margin: 0px;
 }
+* ::before, * ::after {
+  box-sizing: border-box;
+}
 
-.body {
+html,
+body {
   width: 100vw;
   display: flex;
   flex-direction: column;
+  font-family: "Monserrat", sans-serif;
 }
 
 .navbar {
   width: 100vw;
-  height: 20%;
+  height: 96px;
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
@@ -19,17 +23,27 @@
 
 .navbar-sup {
   display: flex;
-  flex-direction: row;
-  height: 51px;
-  border-bottom: 1px solid #484848;
+  justify-content: space-between;
+  align-items: center;
+  height: 52px;
+  border-bottom: 1px solid #dadada;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 100;
+}
+.navbar-sup .left:first-child {
+  flex: 1 1 0%;
 }
 .navbar-sup .left {
   display: flex;
-  flex-direction: row;
-  width: 600px;
+  align-items: center;
+  gap: 1rem;
+}
+.navbar-sup .left .logo {
+  width: 105px;
+  height: 51px;
 }
 .navbar-sup .left .search {
-  height: -moz-min-content;
   height: min-content;
   display: flex;
   align-self: center;
@@ -46,9 +60,9 @@
 .navbar-sup .left .search input {
   border: none;
   font-size: 100%;
+  width: 310px;
 }
 .navbar-sup .left .search .dropdown {
-  min-height: -moz-fit-content;
   min-height: fit-content;
   align-self: center;
 }
@@ -61,4 +75,54 @@
 .navbar-sup .left .search .dropdown #dropdown {
   border: none;
   color: #484848;
-}/*# sourceMappingURL=index.css.map */
+}
+.navbar-sup .right {
+  display: flex;
+  justify-content: flex-end;
+  width: 40vw;
+  align-items: center;
+  margin-right: 1rem;
+}
+.navbar-sup .right a {
+  text-decoration: none;
+  color: #484848;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+img {
+  width: 16px;
+  height: 16px;
+}
+
+.btn-navbar {
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: #ffffff;
+  padding: 1rem;
+  align-self: center;
+  color: #484848;
+  font-size: 0.875rem;
+  font-weight: 700;
+  gap: 0.5rem;
+}
+.btn-navbar :hover {
+  color: red;
+}
+
+.navbar-inf {
+  display: flex;
+  flex-direction: row;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  filter: invert(24%) sepia(0%) saturate(1999%) hue-rotate(252deg) brightness(106%) contrast(88%);
+}
+
+/*# sourceMappingURL=index.css.map */
